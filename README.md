@@ -4,7 +4,7 @@ The test project will consist of doing some basic backend routing using node and
 ## Specs  
 - You are building an online pizza builder where anonymous users can create and order pizzas with different toppings using a json rest api.
 - Each pizza is a a subdocument of an "order" document in the db 
-- Each order contains  information about the anonymous user who ordered the pizza (such as ip address, approx location / session_id / etc...) and when it was ordered, and its delivery status. ( 0 - pending, 1- baking, 2 - delivering, 3 - delivered)  
+- Each order contains  information about the anonymous user who ordered the pizza (such as ip address, approx location / city? / etc...) and when it was ordered, and its delivery status. ( 0 - pending, 1- baking, 2 - delivering, 3 - delivered), add more data to order as you see fit.
 - Each pizza has a list of ingredients, crust type, etc.. figure out your own pizza ingredients and pizza type from pizza recipes online eg [https://www.delish.com/cooking/recipe-ideas/a24893663/homemade-pizza-recipe/](https://www.delish.com/cooking/recipe-ideas/a24893663/homemade-pizza-recipe/)
 
 **YOU CAN USE POSTMAN TO HELP YOU TEST AND DEBUG YOUR API**
@@ -30,6 +30,7 @@ The test project will consist of doing some basic backend routing using node and
 |POST|/cron/:cron_id/stop| stop a specific cron, but keep it in the database.
 
 
-
-
-
+### Suggested Packages
+- mongoose ( elegant mongodb object modeling for node.js ) https://mongoosejs.com/
+- expressjs https://expressjs.com/
+- body-parser https://www.npmjs.com/package/body-parser
