@@ -14,7 +14,7 @@ The test project will consist of doing some basic backend routing using node and
 | method | route | route description |
 |--|--|--|
 |POST | /order/create | create an order with json body and return the created order. post body will contain information about the order and items such as a pizza, pizza ingredients, pizza crust, bake temperature, etc. Reference the dominos online pizza delivery store for more detailed options (or get find a pizza menu online) . orders may contain different items such as side items (a drink or sauce, or something else if you want) along with a pizza.  |
-|GET| /order/list | list all orders with pagination and sorting in a querystring |
+|GET| /orders | list all orders with pagination and sorting in a querystring |
 |POST| /order/:order_id/update | post json body with modified order, incase users need to go back and edit their order. users should not be able to up |
 |GET| /order/:order_id | get a specific order by its id along with all the information about that order including items.
 |GET| /order/:order_id/items|get all items in an array (pizza, sauce, drink) of the order.
@@ -26,7 +26,7 @@ The test project will consist of doing some basic backend routing using node and
 | method | route | route description |
 |--|--|--|
 |POST| /cron/create | create a cron that will automatically order pizzas at set intervals with a particular post body. use a popular node scheduling library from npm.
-|GET|/cron/list|list all cron jobs.
+|GET|/crons|list all cron jobs.
 |POST|/cron/:cron_id/stop| stop a specific cron, but keep it in the database.
 
 
